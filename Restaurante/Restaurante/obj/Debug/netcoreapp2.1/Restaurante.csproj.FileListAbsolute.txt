@@ -1,0 +1,14 @@
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\bin\Debug\netcoreapp2.1\Restaurante.deps.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\bin\Debug\netcoreapp2.1\Restaurante.runtimeconfig.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\bin\Debug\netcoreapp2.1\Restaurante.runtimeconfig.dev.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\bin\Debug\netcoreapp2.1\Restaurante.dll
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\bin\Debug\netcoreapp2.1\Restaurante.pdb
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.csprojAssemblyReference.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.RazorAssemblyInfo.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.RazorAssemblyInfo.cs
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.AssemblyInfoInputs.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.AssemblyInfo.cs
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.RazorTargetAssemblyInfo.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.dll
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Restaurante\Restaurante\obj\Debug\netcoreapp2.1\Restaurante.pdb
