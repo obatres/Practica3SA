@@ -17,7 +17,6 @@ namespace Restaurante.Controllers
         {
             RPPedido rpPedido = new RPPedido();
             return Ok(rpPedido.ObtenerPedidos());
-            //sreturn Ok(View());
         }
 
         [HttpGet("{id}")]
