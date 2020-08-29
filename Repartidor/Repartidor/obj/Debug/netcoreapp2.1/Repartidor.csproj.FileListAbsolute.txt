@@ -1,0 +1,14 @@
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\bin\Debug\netcoreapp2.1\Repartidor.deps.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\bin\Debug\netcoreapp2.1\Repartidor.runtimeconfig.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\bin\Debug\netcoreapp2.1\Repartidor.runtimeconfig.dev.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\bin\Debug\netcoreapp2.1\Repartidor.dll
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\bin\Debug\netcoreapp2.1\Repartidor.pdb
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.csprojAssemblyReference.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.csproj.CoreCompileInputs.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.RazorAssemblyInfo.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.RazorAssemblyInfo.cs
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.AssemblyInfoInputs.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.AssemblyInfo.cs
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.RazorTargetAssemblyInfo.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.dll
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\Repartidor\Repartidor\obj\Debug\netcoreapp2.1\Repartidor.pdb

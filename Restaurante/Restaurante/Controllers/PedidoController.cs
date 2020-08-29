@@ -12,9 +12,11 @@ namespace Restaurante.Controllers
     [ApiController]
     public class PedidoController : Controller
     {
+
         [HttpGet]
         public IActionResult Get()
         {
+
             RPPedido rpPedido = new RPPedido();
             return Ok(rpPedido.ObtenerPedidos());
         }
