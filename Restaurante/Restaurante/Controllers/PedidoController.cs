@@ -44,5 +44,13 @@ namespace Restaurante.Controllers
             rpCli.Agregar(nuevoPedido);
             return CreatedAtAction(nameof(AgregarPedido), nuevoPedido);
         }
+
+        [HttpPost("actualizar")]
+        public IActionResult ActualizarPedido(Pedido nuevo)
+        {
+            RPPedido rpP = new RPPedido();
+            rpP.Actualizar(nuevo);
+            return CreatedAtAction(nameof(ActualizarPedido), nuevo);
+        }
     }
 }

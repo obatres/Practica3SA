@@ -1,0 +1,3 @@
+2020-08-28 22:17:26.041229 Pedido solicitado {'id': 3, 'descripcion': 'Pedido 3', 'idRestaurante': 1, 'idRepartidor': 3, 'idCliente': 3, 'estado': 10} 
+2020-08-28 22:17:26.041229 el pedido 3 del cliente 3 se encuentra en el estado 10 
+2020-08-28 22:17:26.041229  pedido actualizado
