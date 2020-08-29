@@ -12,7 +12,7 @@ Log=open("LogCliente.txt","w")
 # URL para solicitar pedido
 urlSolicitarPedido = "http://localhost:51630/api/pedido/"
 # Id del cliente que solicita pedido
-idCliente = "3"
+idCliente = "4"
 # Request que solicita el pedido al servidor del restaurante
 response = requests.get(urlSolicitarPedido+idCliente)
 # Fecha y hora actual
@@ -40,11 +40,11 @@ headers = {
 }
 # Variable data que contiene la informacion necesaria para colocar un pedido en el servidor del restaurante
 data = {
-    "id":4,
-    "descripcion":"Pedido 4",
+    "id":6,
+    "descripcion":"Pedido 6 ",
     "idrestaurante": 1,
     "idrepartidor":2,
-    "idcliente":4,
+    "idcliente":5,
     "estado":0
     }
 
