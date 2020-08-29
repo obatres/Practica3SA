@@ -12,5 +12,6 @@ namespace Restaurante.Modelos
         public int IdRestaurante { get; set; }
         public int IdRepartidor { get; set; }
         public int IdCliente { get; set; }
+        public int Estado { get; set; }
     }
 }
