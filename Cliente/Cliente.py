@@ -31,7 +31,31 @@ estado = response.json().get("estado")
 # Log del estado del pedido solicitado
 Log.write(str(now)+" el pedido "+str(pedido)+" del cliente "+str(cliente)+" se encuentra en el estado "+str(estado)+" "+"\n")
 
-#-----------------------------Enviar pedido al restaurante
+#-----------------------------Enviar pedido al restaurante------------------
+# URL para enviar un pedido al restaurante
+urlEnviarPedido = urlSolicitarPedido + "agregar"
+# variable headers que inidican en que formato se esta enviando la informacion
+headers = {
+    'content-type': 'application/json'
+}
+# Variable data que contiene la informacion necesaria para colocar un pedido en el servidor del restaurante
+data = {
+    "id":4,
+    "descripcion":"Pedido 4",
+    "idrestaurante": 1,
+    "idrepartidor":2,
+    "idcliente":4,
+    "estado":0
+    }
 
+# Variable responser que realizar la accion POST al servidor restaurante para colocar el pedido
+response  = requests.request("POST",urlEnviarPedido,data=json.dumps(data),headers=headers)
+
+if response.status_code==201:
+    # Pedido creado correctamente
+    Log.write(str(now)+' Nuevo pedido colocado'+"\n")
+else:
+    # Pedido no se pudo crear
+    Log.write(str(now)+" No se ha podido colocar el nuevo pedido\n")
 # Cierra Archivo de Logs
 Log.close() 
