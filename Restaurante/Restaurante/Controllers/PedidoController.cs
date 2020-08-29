@@ -12,9 +12,11 @@ namespace Restaurante.Controllers
     [ApiController]
     public class PedidoController : Controller
     {
+
         [HttpGet]
         public IActionResult Get()
         {
+
             RPPedido rpPedido = new RPPedido();
             return Ok(rpPedido.ObtenerPedidos());
         }
@@ -41,6 +43,14 @@ namespace Restaurante.Controllers
             RPPedido rpCli = new RPPedido();
             rpCli.Agregar(nuevoPedido);
             return CreatedAtAction(nameof(AgregarPedido), nuevoPedido);
+        }
+
+        [HttpPost("actualizar")]
+        public IActionResult ActualizarPedido(Pedido nuevo)
+        {
+            RPPedido rpP = new RPPedido();
+            rpP.Actualizar(nuevo);
+            return CreatedAtAction(nameof(ActualizarPedido), nuevo);
         }
     }
 }

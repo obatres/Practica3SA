@@ -1,0 +1,1 @@
+2020-08-28 21:50:06.143309 Pedido solicitado {'id': 3, 'descripcion': 'Pedido 3', 'idRestaurante': 1, 'idRepartidor': 3, 'idCliente': 3, 'estado': 5} 

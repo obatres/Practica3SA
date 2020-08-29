@@ -6,13 +6,13 @@ import requests
 from datetime import datetime
 
 # Archivo de Logs
-Log=open("LogCliente.txt","w") 
+Log=open("LogRepartidor.txt","w") 
 
 #-----------------------------Solicitar pedido al restaurante---------------
 # URL para solicitar pedido
 urlSolicitarPedido = "http://localhost:51630/api/pedido/"
 # Id del cliente que solicita pedido
-idCliente = "4"
+idCliente = "5"
 # Request que solicita el pedido al servidor del restaurante
 response = requests.get(urlSolicitarPedido+idCliente)
 # Fecha y hora actual
@@ -31,31 +31,35 @@ estado = response.json().get("estado")
 # Log del estado del pedido solicitado
 Log.write(str(now)+" el pedido "+str(pedido)+" del cliente "+str(cliente)+" se encuentra en el estado "+str(estado)+" "+"\n")
 
-#-----------------------------Enviar pedido al restaurante------------------
-# URL para enviar un pedido al restaurante
-urlEnviarPedido = urlSolicitarPedido + "agregar"
+#----------------------------Marcar como entregado-------------------------
+# URL para solicitar pedido
+urlSolicitarPedido = "http://localhost:51630/api/pedido/"
+# Id del cliente que solicita pedido
+idCliente = "5"
+# Request que solicita el pedido al servidor del restaurante
+response = requests.get(urlSolicitarPedido+idCliente)
+# Variable pedido que aloja el pedido que se va a modificar
+pedido = response.json()
+# Cambio de estado del pedido
+pedido["estado"] = 10
+
+# URL para actualizar un pedido en el  restaurante
+urlEnviarPedido = urlSolicitarPedido + "actualizar"
 # variable headers que inidican en que formato se esta enviando la informacion
 headers = {
     'content-type': 'application/json'
 }
 # Variable data que contiene la informacion necesaria para colocar un pedido en el servidor del restaurante
-data = {
-    "id":6,
-    "descripcion":"Pedido 6 ",
-    "idrestaurante": 1,
-    "idrepartidor":2,
-    "idcliente":5,
-    "estado":0
-    }
+data=pedido
 
 # Variable responser que realizar la accion POST al servidor restaurante para colocar el pedido
 response  = requests.request("POST",urlEnviarPedido,data=json.dumps(data),headers=headers)
 
 if response.status_code==201:
     # Pedido creado correctamente
-    Log.write(str(now)+' Nuevo pedido colocado'+"\n")
+    Log.write(str(now)+'  pedido actualizado'+"\n")
 else:
     # Pedido no se pudo crear
-    Log.write(str(now)+" No se ha podido colocar el nuevo pedido\n")
+    Log.write(str(now)+" No se ha podido actualizar el  pedido\n")
 # Cierra Archivo de Logs
 Log.close() 

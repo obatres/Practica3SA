@@ -31,5 +31,10 @@ namespace Restaurante.Repositorios
         {
             _listaPedidos.Add(nuevoCliente);
         }
+
+        public void Actualizar(Pedido pedidoActualizado)
+        {
+            _listaPedidos.Select(c => { c.Estado = pedidoActualizado.Estado; return c; }).ToList();
+        }
     }
 }
