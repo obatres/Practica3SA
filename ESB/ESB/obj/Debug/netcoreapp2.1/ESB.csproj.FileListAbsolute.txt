@@ -1,0 +1,14 @@
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\bin\Debug\netcoreapp2.1\ESB.deps.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\bin\Debug\netcoreapp2.1\ESB.runtimeconfig.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\bin\Debug\netcoreapp2.1\ESB.runtimeconfig.dev.json
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\bin\Debug\netcoreapp2.1\ESB.dll
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.csprojAssemblyReference.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.csproj.CoreCompileInputs.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.RazorAssemblyInfo.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.RazorAssemblyInfo.cs
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.AssemblyInfoInputs.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.AssemblyInfo.cs
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.RazorTargetAssemblyInfo.cache
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\bin\Debug\netcoreapp2.1\ESB.pdb
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.dll
+C:\Users\obatr\Desktop\SA\Practicas\Practica3SA\ESB\ESB\obj\Debug\netcoreapp2.1\ESB.pdb
