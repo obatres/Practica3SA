@@ -21,13 +21,12 @@ namespace ESB.Controllers
         }
 
         [HttpPost("agregar")]
-        public IActionResult AgregarPedido(string nuevoPedido)
+        public async Task<IActionResult> AgregarPedidoAsync(PedidoCliente nuevoPedido)
         {
 
-            Console.WriteLine(nuevoPedido);
             RPCliente RPC = new  RPCliente();
-            RPC.AgregarPedidoCliente(nuevoPedido);
-            return CreatedAtAction(nameof(AgregarPedido), nuevoPedido);
+            await RPC.AgregarPedidoClienteAsync(nuevoPedido);
+            return CreatedAtAction(nameof(AgregarPedidoAsync), nuevoPedido);
         }
     }
 }

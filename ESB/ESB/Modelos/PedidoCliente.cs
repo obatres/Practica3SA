@@ -7,6 +7,11 @@ namespace ESB.Modelos
 {
     public class PedidoCliente
     {
-        public string Pedido { get; set;}
+        public int Id { get; set; }
+        public string Descripcion { get; set; }
+        public int IdRestaurante { get; set; }
+        public int IdRepartidor { get; set; }
+        public int IdCliente { get; set; }
+        public int Estado { get; set; }
     }
 }

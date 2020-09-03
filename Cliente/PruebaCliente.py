@@ -15,12 +15,12 @@ headers = {
 }
 # Variable data que contiene la informacion necesaria para colocar un pedido en el servidor del restaurante
 data = {
-    "id":7,
-    "descripcion":"Pedido 7 ",
-    "idrestaurante": 4,
-    "idrepartidor":3,
-    "idcliente":8,
-    "estado":1
+    "id":10,
+    "descripcion":"Pedido 10",
+    "idrestaurante": 10,
+    "idrepartidor":10,
+    "idcliente":10,
+    "estado":10
     }
 
 # Variable responser que realizar la accion POST al servidor restaurante para colocar el pedido

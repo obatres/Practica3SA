@@ -1,3 +1,0 @@
-2020-08-28 22:31:06.351703 Pedido solicitado {'id': 5, 'descripcion': 'Pedido 5', 'idRestaurante': 1, 'idRepartidor': 2, 'idCliente': 4, 'estado': 0} 
-2020-08-28 22:31:06.351703 el pedido 5 del cliente 4 se encuentra en el estado 0 
-2020-08-28 22:31:06.351703 Nuevo pedido colocado

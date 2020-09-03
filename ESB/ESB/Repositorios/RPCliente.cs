@@ -3,25 +3,29 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Flurl.Http;
+
 
 namespace ESB.Repositorios
 {
     public class RPCliente
     {
-        public static PedidoCliente Pcliente = new PedidoCliente()
+        public static PedidoCliente ListaPedidoCliente = new PedidoCliente()
         {
-            Pedido="no hay pedido aun"
+             Id =0, Descripcion = "Pedido 0" , IdRestaurante = 0, IdRepartidor=0 , IdCliente= 0, Estado=0
         };
 
-        public object ObtenerPedidoCliente()
+
+        public PedidoCliente ObtenerPedidoCliente()
         {
-            return Pcliente;
+            return ListaPedidoCliente;
         }
 
-        public void AgregarPedidoCliente(string nuevo)
+        public async Task AgregarPedidoClienteAsync(PedidoCliente nuevo)
         {
-            
-            Pcliente.Pedido = nuevo;
+
+            var response = await "http://localhost:51630/api/Pedido/agregar".PostJsonAsync(nuevo);
+
         }
     }
 }
