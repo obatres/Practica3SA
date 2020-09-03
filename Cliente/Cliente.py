@@ -10,9 +10,9 @@ Log=open("LogCliente.txt","w")
 
 #-----------------------------Solicitar pedido al restaurante---------------
 # URL para solicitar pedido
-urlSolicitarPedido = "http://localhost:51630/api/pedido/"
+urlSolicitarPedido = "http://localhost:56949/api/buscliente/"
 # Id del cliente que solicita pedido
-idCliente = "4"
+idCliente = "1"
 # Request que solicita el pedido al servidor del restaurante
 response = requests.get(urlSolicitarPedido+idCliente)
 # Fecha y hora actual
@@ -52,7 +52,6 @@ data = {
 
 # Variable responser que realizar la accion POST al servidor restaurante para colocar el pedido
 response  = requests.request("POST",urlEnviarPedido,data=json.dumps(data),headers=headers)
-
 
 if response.status_code==201:
     # Pedido creado correctamente
