@@ -27,5 +27,16 @@ namespace ESB.Repositorios
             var response = await "http://localhost:51630/api/Pedido/agregar".PostJsonAsync(nuevo);
 
         }
+
+        public async Task<PedidoCliente> ObtenerPedidoClienteUnicoAsync(int id)
+        {
+            var url = "http://localhost:51630/api/pedido/" + id.ToString();
+            var response = await url.GetJsonAsync<PedidoCliente>();
+            //Console.WriteLine("-AQUI ABAJO ESTA EL RWSULTADO----");
+            //Console.WriteLine(response.Id);
+            //PedidoCliente p = new PedidoCliente();
+            return response;
+        }
+
     }
 }

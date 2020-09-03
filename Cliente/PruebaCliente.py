@@ -7,23 +7,9 @@ from datetime import datetime
 
 # URL para solicitar pedido
 urlSolicitarPedido = "http://localhost:56949/api/buscliente/"
+# Id del cliente que solicita pedido
+idCliente = "11"
+# Request que solicita el pedido al servidor del restaurante
+response = requests.get(urlSolicitarPedido+idCliente)
 
-urlEnviarPedido = urlSolicitarPedido +"agregar"
-# variable headers que inidican en que formato se esta enviando la informacion
-headers = {
-    'content-type': 'application/json'
-}
-# Variable data que contiene la informacion necesaria para colocar un pedido en el servidor del restaurante
-data = {
-    "id":10,
-    "descripcion":"Pedido 10",
-    "idrestaurante": 10,
-    "idrepartidor":10,
-    "idcliente":10,
-    "estado":10
-    }
-
-# Variable responser que realizar la accion POST al servidor restaurante para colocar el pedido
-response  = requests.request("POST",urlEnviarPedido,data=json.dumps(data),headers=headers)
-
-print(response.status_code)
+print(response.json())

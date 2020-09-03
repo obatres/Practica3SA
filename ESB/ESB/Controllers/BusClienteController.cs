@@ -24,9 +24,17 @@ namespace ESB.Controllers
         public async Task<IActionResult> AgregarPedidoAsync(PedidoCliente nuevoPedido)
         {
 
-            RPCliente RPC = new  RPCliente();
+            RPCliente RPC = new RPCliente();
             await RPC.AgregarPedidoClienteAsync(nuevoPedido);
             return CreatedAtAction(nameof(AgregarPedidoAsync), nuevoPedido);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPedidoCliente(int id)
+        {
+            RPCliente rp = new RPCliente();
+            var pedido = await rp.ObtenerPedidoClienteUnicoAsync(id);
+            return Ok(pedido);
         }
     }
 }

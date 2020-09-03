@@ -32,24 +32,27 @@ estado = response.json().get("estado")
 Log.write(str(now)+" el pedido "+str(pedido)+" del cliente "+str(cliente)+" se encuentra en el estado "+str(estado)+" "+"\n")
 
 #-----------------------------Enviar pedido al restaurante------------------
-# URL para enviar un pedido al restaurante
-urlEnviarPedido = urlSolicitarPedido + "agregar"
+# URL para solicitar pedido
+urlSolicitarPedido = "http://localhost:56949/api/buscliente/"
+
+urlEnviarPedido = urlSolicitarPedido +"agregar"
 # variable headers que inidican en que formato se esta enviando la informacion
 headers = {
     'content-type': 'application/json'
 }
 # Variable data que contiene la informacion necesaria para colocar un pedido en el servidor del restaurante
 data = {
-    "id":6,
-    "descripcion":"Pedido 6 ",
-    "idrestaurante": 1,
-    "idrepartidor":2,
-    "idcliente":5,
-    "estado":0
+    "id":10,
+    "descripcion":"Pedido 10",
+    "idrestaurante": 10,
+    "idrepartidor":10,
+    "idcliente":11,
+    "estado":10
     }
 
 # Variable responser que realizar la accion POST al servidor restaurante para colocar el pedido
 response  = requests.request("POST",urlEnviarPedido,data=json.dumps(data),headers=headers)
+
 
 if response.status_code==201:
     # Pedido creado correctamente
