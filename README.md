@@ -27,3 +27,6 @@
   * CAMBIO: El servidor recibe pedido de los clientes y le informa tanto al repartidor como al cliente el estado del pedido.
   *         El cliente puede colocar pedidos en el restaurante que desee y se le asignara un repartidor, tambien puede consultar el estado de su pedido. 
   *         El repartidor puede consultar el pedido que le llevara al cliente, como consultar el estado cuando se encuentra en el restaurante y tambien actualizarlo cuando lo entregue al cliente. 
+  
+* 1.1
+ *CAMBIO: Se manejan todos los servicios por medio de un ESB intermedio entre los clientes (cliente y repartidor) y el servidor (restaurante)
