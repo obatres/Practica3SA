@@ -36,5 +36,13 @@ namespace ESB.Controllers
             var pedido = await rp.ObtenerPedidoClienteUnicoAsync(id);
             return Ok(pedido);
         }
+
+        [HttpPost("actualizar")]
+        public async Task<IActionResult> ActualizarPedido(PedidoCliente actual)
+        {
+            RPCliente rp = new RPCliente();
+            await rp.ActualizarPedidoAsync(actual);
+            return CreatedAtAction(nameof(ActualizarPedido), actual);
+        }
     }
 }

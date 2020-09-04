@@ -10,9 +10,9 @@ Log=open("LogRepartidor.txt","w")
 
 #-----------------------------Solicitar pedido al restaurante---------------
 # URL para solicitar pedido
-urlSolicitarPedido = "http://localhost:51630/api/pedido/"
+urlSolicitarPedido = "http://localhost:56949/api/buscliente/"
 # Id del cliente que solicita pedido
-idCliente = "5"
+idCliente = "1"
 # Request que solicita el pedido al servidor del restaurante
 response = requests.get(urlSolicitarPedido+idCliente)
 # Fecha y hora actual
@@ -33,15 +33,15 @@ Log.write(str(now)+" el pedido "+str(pedido)+" del cliente "+str(cliente)+" se e
 
 #----------------------------Marcar como entregado-------------------------
 # URL para solicitar pedido
-urlSolicitarPedido = "http://localhost:51630/api/pedido/"
+urlSolicitarPedido = "http://localhost:56949/api/buscliente/"
 # Id del cliente que solicita pedido
-idCliente = "5"
+idCliente = "1"
 # Request que solicita el pedido al servidor del restaurante
 response = requests.get(urlSolicitarPedido+idCliente)
 # Variable pedido que aloja el pedido que se va a modificar
 pedido = response.json()
 # Cambio de estado del pedido
-pedido["estado"] = 10
+pedido["estado"] = 0
 
 # URL para actualizar un pedido en el  restaurante
 urlEnviarPedido = urlSolicitarPedido + "actualizar"
@@ -55,6 +55,7 @@ data=pedido
 # Variable responser que realizar la accion POST al servidor restaurante para colocar el pedido
 response  = requests.request("POST",urlEnviarPedido,data=json.dumps(data),headers=headers)
 
+print(response.status_code)
 if response.status_code==201:
     # Pedido creado correctamente
     Log.write(str(now)+'  pedido actualizado'+"\n")

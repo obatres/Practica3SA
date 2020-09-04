@@ -32,10 +32,12 @@ namespace ESB.Repositorios
         {
             var url = "http://localhost:51630/api/pedido/" + id.ToString();
             var response = await url.GetJsonAsync<PedidoCliente>();
-            //Console.WriteLine("-AQUI ABAJO ESTA EL RWSULTADO----");
-            //Console.WriteLine(response.Id);
-            //PedidoCliente p = new PedidoCliente();
             return response;
+        }
+
+        public async Task ActualizarPedidoAsync(PedidoCliente actual)
+        {
+            var response = await "http://localhost:51630/api/pedido/actualizar".PostJsonAsync(actual);
         }
 
     }
